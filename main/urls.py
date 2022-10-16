@@ -7,6 +7,6 @@ from . import views
 # ]
 
 urlpatterns = [
-    path("<str:name>", views.index, name = "index"),
+    path("playlist/<str:playlistName>", views.playlistPage, name="playlistPage"),
     path("", views.home, name="home")
 ]

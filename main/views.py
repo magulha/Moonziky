@@ -4,9 +4,9 @@ from django.http import HttpResponse
 from .models import Playlist, Items
 
 # Create your views here.
-def index(response, name):
-	ls = Playlist.objects.get(name=name)
-	return render(response, "main/base.html", {})
+def playlistPage(response, playlistName):
+	playlist = Playlist.objects.get(name=playlistName)
+	return render(response, "main/playlist.html", {"playlistName": playlist.name})
 
 def home(response):
 	return render(response, "main/home.html", {})
