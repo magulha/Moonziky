@@ -1,0 +1,20 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+    <h1>Playlists</h1>
+    {% if playlist_list %}
+    <ul>
+        {% for playlist in playlist_list %}
+            <li>
+                <a href="{{ playlist.get_absolute_url }}">{{ playlist.name }}</a> ({{playlist.musics.count}})
+
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% else %}
+        <p>There are no playlist in the Playlists.</p>
+
+    {% endif %}
+
+{% endblock %}

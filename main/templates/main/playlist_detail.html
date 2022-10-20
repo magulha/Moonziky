@@ -1,0 +1,13 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+    <h1>Title: {{ playlist.name }}</h1>
+
+    <p><strong>Nome:</strong> <a href="">{{ playlist.name }}</a></p>
+    {% comment %} <p><strong>Author:</strong> <a href="">{{ playlist.author }}</a></p>
+    <p><strong>Summary:</strong> {{ playlist.summary }}</p>
+    <p><strong>ISBN:</strong> {{ playlist.isbn }}</p>
+    <p><strong>Language:</strong> {{ playlist.language }}</p>
+    <p><strong>Genre:</strong> {% for genre in playlist.genre.all %} {{ genre }}{% if not forloop.last %}, {% endif %}{% endfor %}</p> {% endcomment %}
+
+{% endblock %}

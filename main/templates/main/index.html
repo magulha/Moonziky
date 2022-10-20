@@ -1,0 +1,12 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+  <h1>Moonziky Home</h1>
+  <p>Welcome to Moonziky!</p>
+  <h2>Dynamic content</h2>
+  <p>The Moonziky has the following record counts:</p>
+  <ul>
+    <li><strong>Playlist:</strong> {{ numPlaylist }}</li>
+    <li><strong>Musics:</strong> {{ numMusic }}</li>
+  </ul>
+{% endblock %}
