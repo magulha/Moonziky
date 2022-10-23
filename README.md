@@ -1,6 +1,8 @@
 # Moonziky
-Projeto feito por David Cândido, Diego Rodrigues, Fernando Matos, Guilherme Rabelo, Pedro Mendonça e Rodrigo Arcoverde.
+Projeto feito por David Cândido, Diego Rodrigues, Fernando Matos, Guilherme Rabelo, Pedro Mendonça, Rodrigo Arcoverde e Antonio Cabral.
 
-O Moonziky será uma nova plataforma de música, que pretende conectar seus usuários através de músicas e uma comunidade de compartilhamento. O projeto será feito utilizando Python e Django, e promete se diferenciar das plataformas atuais de ouvir música, adicionando funcionalidades que não foram exploradas pela comunidade da música.
+O Moonziky será uma nova plataforma de criação de playlists com links do youtube, para que as pessoas foram possam achar com mais facilidade uma lista de videos sobre um assunto determinado.
+
+A plataforma será implementada atraves do framework Django.
 
 Atualmente estao sendo implementadas funcionalidades para a criacao e edicao de cadastro, playlists e adicionar musicas nas playlists.
