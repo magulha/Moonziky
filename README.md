@@ -1,5 +1,5 @@
 # Moonziky
-Projeto feito por David Cândido, Diego Rodrigues, Fernando Matos, Guilherme Rabelo, Pedro Mendonça, Rodrigo Arcoverde e Antonio Cabral.
+Projeto feito por Antonio Cabral David Cândido, Diego Rodrigues, Fernando Matos, Guilherme Rabelo, Pedro Mendonça, Rodrigo Arcoverde.
 
 O Moonziky será uma nova plataforma de criação de playlists com links do youtube, para que as pessoas foram possam achar com mais facilidade uma lista de videos sobre um assunto determinado.
 
