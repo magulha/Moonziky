@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-3">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -22,10 +22,10 @@
         <th>
             <tr>
                 <th>Sr No</th>
-                <th>Playlist Name</th>
-                <th>Created By</th>
-                <th>Action 1</th>
-                <th>Action 2</th>
+                <th>Nome da Playlist</th>
+                <th>Criado por:</th>
+                <th>Ação 1</th>
+                <th>Ação 2</th>
             </tr>
         </th>
         {% for list in listOfPlaylists %}
@@ -33,8 +33,8 @@
             <td>{{forloop.counter}}</td>
             <td>{{list.nameOfPlaylist}}</td>
             <td>{{list.createdBy}}</td>
-            <td><a href="{% url 'main:followSystem' list.id %}">Follow </a>the creator</td>
-            <td><a href="{% url 'main:likeSystem' list.id %}">Like</a> the Playlist</td>
+            <td><a href="{% url 'main:followSystem' list.id %}">Seguir </a>o criador</td>
+            <td><a href="{% url 'main:likeSystem' list.id %}">Curtir</a>a Playlist</td>
         </tr>
         {% endfor %}
     </table>
