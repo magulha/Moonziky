@@ -5,4 +5,4 @@ O Moonziky será uma nova plataforma de criação de playlists com links do yout
 
 A plataforma será implementada atraves do framework Django.
 
-Atualmente estao sendo implementadas funcionalidades para a criacao e edicao de cadastro, playlists e adicionar musicas nas playlists.
+Atualmente estao sendo implementadas funcionalidades para a criacao e edicao de cadastro, criar, curtir e editar playlists, fora seguir o usuario que criou uma playlist ou a propria playlist em si.
