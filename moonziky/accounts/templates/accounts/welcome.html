@@ -1,0 +1,13 @@
+<h2>Welcome {{ user.username }}</h2>
+
+{% if user.is_authenticated %}
+<h2>Create the Playlist <a href="{% url 'accounts:create_playlist' %}">here</a> Or go to the <a href="{% url 'main:dashboard' %}">Dashboard</a></h2>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Save">
+</form>
+<a href="{% url 'accounts:logout' %}">Logout</a>
+{% else %}
+<a href="{% url 'accounts:login' %}">Login</a>
+{% endif %}
