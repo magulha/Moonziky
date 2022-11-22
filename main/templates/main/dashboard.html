@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+  border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <th>
+            <tr>
+                <th>Sr No</th>
+                <th>Playlist Name</th>
+                <th>Created By</th>
+                <th>Action 1</th>
+                <th>Action 2</th>
+            </tr>
+        </th>
+        {% for list in listOfPlaylists %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{list.nameOfPlaylist}}</td>
+            <td>{{list.createdBy}}</td>
+            <td><a href="{% url 'main:followSystem' list.id %}">Follow </a>the creator</td>
+            <td><a href="{% url 'main:likeSystem' list.id %}">Like</a> the Playlist</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'accounts:logout' %}">Logout</a>
+</body>
+
+</html>
